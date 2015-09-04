@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+.modal-dialog {
+  .modal-content {
+    color: $white;
+    background-color: $main-bg-color;
+    border-radius: 5px;
+    .modal-header {
+      background-color: $grey-dark5;
+    }
+  }
+}
