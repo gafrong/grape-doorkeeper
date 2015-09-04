@@ -11,5 +11,16 @@ Rails.application.routes.draw do
     end
   end
   
-  root 'landing#index'
+  # root 'landing#index'
+
+  get '/', to: redirect('/')
+
+  namespace :api, defaults: {format: :json} do 
+   
+    resources :groups, except: [:new, :edit]
+    
+    namespace :v1 do
+      resources :lists
+    end
+  end  
 end

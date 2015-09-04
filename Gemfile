@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
-# Use postgresql as the database for Active Record
+
 gem 'pg'
 gem 'sass'
 gem 'sass-rails', '~> 5.0'
@@ -44,6 +44,12 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'dotenv-deployment'
 gem 'dotenv-rails'
 
+gem 'rails_12factor'
+gem 'angularjs-rails'
+gem 'angular-ui-bootstrap-rails'
+gem 'rails-api'
+gem 'responders', '~> 2.0'
+
 group :development, :test do
   gem 'foreman'
   gem 'rerun'
@@ -59,7 +65,6 @@ group :development, :test do
 end
 
 group :development do 
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
 
