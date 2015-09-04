@@ -39,11 +39,11 @@ angular
         templateUrl: 'views/groups.html',
         controller: 'GroupsCtrl',
         // authenticate user before page view
-        resolve: {
-          auth: ['$auth', function($auth){
-            return $auth.validateUser();
-          }]
-        }
+        // resolve: {
+        //   auth: ['$auth', function($auth){
+        //     return $auth.validateUser();
+        //   }]
+        // }
       })
       .when('/about', {
         templateUrl: 'views/about.html',
@@ -52,11 +52,11 @@ angular
       .when('/list', {
         templateUrl: 'views/list.html',
         controller: 'ListCtrl',
-        resolve: {
-          auth: ['$auth', function($auth){
-            return $auth.validateUser();
-          }]
-        }
+        // resolve: {
+        //   auth: ['$auth', function($auth){
+        //     return $auth.validateUser();
+        //   }]
+        // }
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
